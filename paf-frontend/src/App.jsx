@@ -4,6 +4,7 @@ import OAuth2RedirectHandler from "./pages/OAuth2RedirectHandler.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import Navbar from "./components/Navbar.jsx";
+import HomePage from "./pages/HomePage.jsx";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
                   path="/login/oauth2/code/google"
                   element={<OAuth2RedirectHandler />}
               />
+              <Route element={<HomePage />} path="/" />
               <Route element={<LoginPage />} path="/login" />
               <Route element={<RegisterPage />} path="/register" />
           </Routes>
